@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_conts",
+  "info": {
+    "singularName": "product-cont",
+    "pluralName": "product-conts",
+    "displayName": "productCont",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "productName": {
+      "type": "string"
+    },
+    "synopsis": {
+      "type": "text"
+    },
+    "technicalLeader": {
+      "type": "string"
+    },
+    "productManager": {
+      "type": "string"
+    },
+    "area": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::area.area",
+      "mappedBy": "product_cont"
+    },
+    "assets": {
+      "type": "component",
+      "repeatable": false,
+      "component": "img.images"
+    },
+    "feature": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::feature.feature"
+    },
+    "technical_documentation": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::technical-documentation.technical-documentation"
+    }
+  }
+}

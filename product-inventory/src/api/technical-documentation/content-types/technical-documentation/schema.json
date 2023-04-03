@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "technical_documentations",
+  "info": {
+    "singularName": "technical-documentation",
+    "pluralName": "technical-documentations",
+    "displayName": "technicalDocumentation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "data": {
+      "type": "richtext"
+    }
+  }
+}

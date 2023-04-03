@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_img_images",
+  "info": {
+    "displayName": "images"
+  },
+  "options": {},
+  "attributes": {
+    "pictures": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
